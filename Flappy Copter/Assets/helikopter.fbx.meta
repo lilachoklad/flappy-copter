@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 1f9e9ea2a1a3c204789242d6b734c5dd
+timeCreated: 1448554780
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: botten
+    100002: Camera
+    100004: Cube
+    100006: Cube.001
+    100008: Cube.002
+    100010: Cylinder
+    100012: fot
+    100014: fot1
+    100016: "fotst\xE4llning"
+    100018: "fotst\xE4llning.002"
+    100020: //RootNode
+    100022: Lamp
+    100024: propellerblad
+    100026: propellerblad.001
+    100028: propellerblad.002
+    100030: ryggen
+    100032: svans
+    400000: botten
+    400002: Camera
+    400004: Cube
+    400006: Cube.001
+    400008: Cube.002
+    400010: Cylinder
+    400012: fot
+    400014: fot1
+    400016: "fotst\xE4llning"
+    400018: "fotst\xE4llning.002"
+    400020: //RootNode
+    400022: Lamp
+    400024: propellerblad
+    400026: propellerblad.001
+    400028: propellerblad.002
+    400030: ryggen
+    400032: svans
+    2300000: botten
+    2300002: Cube
+    2300004: Cube.001
+    2300006: Cube.002
+    2300008: Cylinder
+    2300010: fot
+    2300012: fot1
+    2300014: "fotst\xE4llning"
+    2300016: "fotst\xE4llning.002"
+    2300018: propellerblad
+    2300020: propellerblad.001
+    2300022: propellerblad.002
+    2300024: ryggen
+    2300026: svans
+    3300000: botten
+    3300002: Cube
+    3300004: Cube.001
+    3300006: Cube.002
+    3300008: Cylinder
+    3300010: fot
+    3300012: fot1
+    3300014: "fotst\xE4llning"
+    3300016: "fotst\xE4llning.002"
+    3300018: propellerblad
+    3300020: propellerblad.001
+    3300022: propellerblad.002
+    3300024: ryggen
+    3300026: svans
+    4300000: Cube.002
+    4300002: Cube.001
+    4300004: Cube
+    4300006: propellerblad.002
+    4300008: propellerblad.001
+    4300010: Cylinder
+    4300012: "fotst\xE4llning.002"
+    4300014: fot1
+    4300016: "fotst\xE4llning"
+    4300018: fot
+    4300020: propellerblad
+    4300022: svans
+    4300024: ryggen
+    4300026: botten
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
