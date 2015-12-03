@@ -11,9 +11,9 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
-        float helicopterX = helicopter.transform.position.x;
-        float helicopterY = helicopter.transform.position.y;
-        transform.position = new Vector3(helicopterX, helicopterY, transform.position.z);
+        float helicopterX = helicopter.transform.position.x + 5;
+        //float helicopterY = helicopter.transform.position.y;
+        transform.position = new Vector3(helicopterX, 1.5f, transform.position.z);
 	}
     
 }
