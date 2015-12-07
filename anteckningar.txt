@@ -3,7 +3,7 @@
 
 hålet ska alltid vara 3.5 högt och kan placeras ut mellan 4 och -1.
 
-den där uppe mellan 2.5 och 4 (-1+3.5 och 4). Eventuellt plussa med halva höjden.
+den där uppe mellan 2.5 och 4 (-1+3.5 och 4). Eventuellt plussa med halva höjden. 4.76 och 9.76
 
 den där uppe är random och den nedre blir den övres y-värde minus 3.5. 
 
