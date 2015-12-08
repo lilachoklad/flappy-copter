@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class GolvController : MonoBehaviour {
+public class GolvTakController : MonoBehaviour {
 
     private bool gameLost = false;
    public Text restartText;
