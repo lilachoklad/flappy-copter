@@ -5,12 +5,18 @@ using System.Collections;
 public class GolvTakController : MonoBehaviour {
 
     private bool gameLost = false;
-   public Text restartText;
+    public Text restartText;
+    public Text gameOverCountText;
+    private static int score;
+    public GameObject wall;
 
     // Use this for initialization
     void Start () {
-      restartText.text = "";
+        restartText.text = "";
         gameLost = false;
+        gameOverCountText.text = "";
+        //GameObject gameOverSkylt = GameObject.FindGameObjectWithTag("gameOverSkylt");
+        //gameOverSkylt.gameObject.SetActive(false);
     }
 	
 
@@ -25,8 +31,11 @@ public class GolvTakController : MonoBehaviour {
             //float helicopterX = other.transform.position.x;
             //float helicopterZ = other.transform.position.z;
             //float helicopterY = gameObject.transform.position.y;
-           // other.transform.position = new Vector3(helicopterX, helicopterY, helicopterZ);
-          restartText.text = "Klicka på mellanslag för att spela igen";
+            // other.transform.position = new Vector3(helicopterX, helicopterY, helicopterZ);
+            score = PlayerController.count;
+            
+            gameOverCountText.text = "Din poäng blev: " + score.ToString();
+            restartText.text = "Klicka pà R för att spela igen";
         }
     }
 
@@ -34,7 +43,9 @@ public class GolvTakController : MonoBehaviour {
     void Update() {
         if (gameLost == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            //GameObject gameOverSkylt = GameObject.FindGameObjectWithTag("gameOverSkylt");
+            //gameOverSkylt.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 Application.LoadLevel(0);
                 Time.timeScale = 1;
