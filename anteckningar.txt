@@ -12,3 +12,6 @@ http://docs.unity3d.com/ScriptReference/Random.Range.html
 funktion som går igenom bitarna och tagga bitarna som uppebit1, nerebit1 osv
 
 kalla på funktionen när spelet har startat och efter teleporteringen
+
+
+spela ljudet när helikopterns y-hastighet (velocity) är positiv och pausa när den negativ 

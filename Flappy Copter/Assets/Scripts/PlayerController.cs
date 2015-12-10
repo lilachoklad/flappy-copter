@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public static int count;
     public Text countText;
+    public AudioClip helicopterSound;
+    private AudioSource source;
 
     // Use this for initialization
     void Start()
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         count = 0;
         SetCounterText();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,18 @@ public class PlayerController : MonoBehaviour {
         }
 
         rb.velocity = new Vector3(speed, rb.velocity.y, rb.velocity.z);
+
+        if (rb.velocity.y > 0)
+        {
+            if (!source.isPlaying)
+            {
+                source.Play();
+            }
+        }
+        else
+        {
+            source.Pause();
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -44,10 +59,22 @@ public class PlayerController : MonoBehaviour {
             count++;
             SetCounterText();
         }
+        if (other.gameObject.tag == "extraspeed")
+        {
+            other.gameObject.SetActive(false);
+            speed = 4;
+            Invoke("ResetSpeed", 10.0f);
+        }
     }
 
     void SetCounterText()
     {
         countText.text = "Poäng: " + count.ToString();
     }
+
+    void ResetSpeed()
+    {
+        speed = 1;
+    }
+
 }
