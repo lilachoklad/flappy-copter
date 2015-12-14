@@ -8,15 +8,17 @@ public class GolvTakController : MonoBehaviour {
     public Text restartText;
     public Text gameOverCountText;
     private static int score;
-    public GameObject wall;
+    public GameObject gameOverSkylt;
 
     // Use this for initialization
     void Start () {
         restartText.text = "";
         gameLost = false;
         gameOverCountText.text = "";
-        //GameObject gameOverSkylt = GameObject.FindGameObjectWithTag("gameOverSkylt");
-        //gameOverSkylt.gameObject.SetActive(false);
+        if (gameOverSkylt != null) {
+            gameOverSkylt.SetActive(false);
+        }
+        
     }
 	
 
@@ -27,11 +29,6 @@ public class GolvTakController : MonoBehaviour {
         {
             Time.timeScale = 0;
             gameLost = true;
-            //så helikoptern inte ramlar ner utanför bild när spelet är slut
-            //float helicopterX = other.transform.position.x;
-            //float helicopterZ = other.transform.position.z;
-            //float helicopterY = gameObject.transform.position.y;
-            // other.transform.position = new Vector3(helicopterX, helicopterY, helicopterZ);
             score = PlayerController.count;
             
             gameOverCountText.text = "Din poäng blev: " + score.ToString();
@@ -43,8 +40,14 @@ public class GolvTakController : MonoBehaviour {
     void Update() {
         if (gameLost == true)
         {
-            //GameObject gameOverSkylt = GameObject.FindGameObjectWithTag("gameOverSkylt");
-            //gameOverSkylt.gameObject.SetActive(true);
+            if (gameOverSkylt != null)
+            {
+                gameOverSkylt.SetActive(true);
+            }
+            
+            GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
+            float helicopterX = helicopter.transform.position.x + 1;
+            gameOverSkylt.transform.position = new Vector3(helicopterX, transform.position.y, transform.position.z);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Application.LoadLevel(0);
