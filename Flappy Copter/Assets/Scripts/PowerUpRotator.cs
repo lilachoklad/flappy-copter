@@ -18,14 +18,16 @@ public class PowerUpRotator : MonoBehaviour {
     public void genereraRandomPosition()
     {
         GameObject extrapoint = GameObject.FindGameObjectWithTag("extrapoint");
-        randomBitPosition(extrapoint);
         GameObject extraspeed = GameObject.FindGameObjectWithTag("extraspeed");
-        randomBitPosition(extraspeed);
+        randomBitPosition(extrapoint, extraspeed);
     }
 
-    private void randomBitPosition(GameObject extrapoint)
+    private void randomBitPosition(GameObject extrapoint, GameObject extraspeed)
     {
         float extrapointZ = extrapoint.transform.position.z;
-        extrapoint.transform.position = new Vector3(Random.Range(26, 40), Random.Range(6.5F, -2.4F), extrapointZ);
+        extrapoint.transform.position = new Vector3(Random.Range(17, 95), Random.Range(5.8F, -2.8F), extrapointZ);
+
+        float extraspeedZ = extraspeed.transform.position.z;
+        extraspeed.transform.position = new Vector3(Random.Range(17, 95), Random.Range(5.8F, -2.8F), extraspeedZ);
     }
 }

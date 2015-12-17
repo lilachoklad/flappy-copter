@@ -46,8 +46,8 @@ public class GolvTakController : MonoBehaviour {
             }
             
             GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
-            float helicopterX = helicopter.transform.position.x + 1;
-            gameOverSkylt.transform.position = new Vector3(helicopterX, transform.position.y, transform.position.z);
+            float helicopterX = helicopter.transform.position.x + 5.7f;
+            gameOverSkylt.transform.position = new Vector3(helicopterX, gameOverSkylt.transform.position.y, gameOverSkylt.transform.position.z);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Application.LoadLevel(0);
