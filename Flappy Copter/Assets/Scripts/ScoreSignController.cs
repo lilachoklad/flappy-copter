@@ -12,7 +12,6 @@ public class ScoreSignController : MonoBehaviour {
 	void Update () {
         GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
         float helicopterX = helicopter.transform.position.x - 2.4f;
-        //float helicopterY = helicopter.transform.position.y;
         transform.position = new Vector3(helicopterX, transform.position.y, transform.position.z);
 
     }

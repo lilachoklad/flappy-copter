@@ -48,15 +48,6 @@ public class WallController : MonoBehaviour {
        
         randomBitPosition(uppebit6, nerebit6);
 
-        /*
-        GameObject uppebit7 = GameObject.FindGameObjectWithTag("uppebit7");
-        GameObject nerebit7 = GameObject.FindGameObjectWithTag("nerebit7");
-        randomBitPosition(uppebit7, nerebit7);
-
-        GameObject uppebit8 = GameObject.FindGameObjectWithTag("uppebit8");
-        GameObject nerebit8 = GameObject.FindGameObjectWithTag("nerebit8");
-        randomBitPosition(uppebit8, nerebit8);
-        */
 
     }
 

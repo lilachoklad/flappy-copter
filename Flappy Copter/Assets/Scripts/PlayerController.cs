@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour {
     {
         if (Input.GetButtonDown("Jump"))
         {
-            //rb.AddForce(transform.up * power, ForceMode.Impulse);
             rb.velocity = new Vector3(speed, power, rb.velocity.z);
         }
 
@@ -74,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 
     void ResetSpeed()
     {
-        speed = 1;
+        speed = 2;
     }
 
 }

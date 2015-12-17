@@ -4,6 +4,7 @@ using System.Collections;
 public class TeleportController : MonoBehaviour {
 
     public GameObject wall;
+    public GameObject powerup;
 
     // Use this for initialization
     void Start () {
@@ -26,11 +27,18 @@ public class TeleportController : MonoBehaviour {
             GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
             float helicopterY = helicopter.transform.position.y;
             float helicopterZ = helicopter.transform.position.z;
-           // var player = GameObject.Find("helikopter");
+
             other.transform.position = new Vector3(-6.71f, helicopterY, helicopterZ);
             //kalla på randombit-funktionen
             WallController wc = (WallController) wall.GetComponent(typeof(WallController));
             wc.genereraRandomPosition();
+
+            foreach (Transform powerupKub in powerup.transform)
+            {
+                PowerUpController puc = (PowerUpController)powerupKub.gameObject.GetComponent(typeof(PowerUpController));
+                powerupKub.gameObject.SetActive(true);
+                puc.genereraRandomPosition();
+            }
         }
     }
 }

@@ -12,7 +12,6 @@ public class CameraController : MonoBehaviour {
 	void Update () {
         GameObject helicopter = GameObject.FindGameObjectWithTag("helicopterTag");
         float helicopterX = helicopter.transform.position.x + 5;
-        //float helicopterY = helicopter.transform.position.y;
         transform.position = new Vector3(helicopterX, 1.5f, transform.position.z);
 	}
     
